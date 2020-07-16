@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>BärnscRollt</title>
+    <meta name="description" content="Our first page">
+    <meta name="keywords" content="html tutorial template">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="maindiv">
+
+
+        <object data="media/Logo_invert.svg" type="image/svg+xml" id="mainLogo" alt="Logo Bern scrollt">
+            <!-- Für Browser ohne SVG-Unterstützung -->
+            <img src="media/Logo_invert.svg" alt="Logo Bern scrollt">
+        </object>
+
+        <h1>Wilkommen bei <br>
+            BärnscRollt!
+        </h1>
+
+        <div class="lineNormal"></div>
+
+        <h2>Wo bist du?
+        </h2>
+
+        <object data="media/linesPrimary.svg" type="image/svg+xml" class="linesPrimary" alt="Logo Bern scrollt">
+            <!-- Für Browser ohne SVG-Unterstützung -->
+            <img src="media/linesPrimary.svg" alt="Linien zu den Knöpfen">
+        </object>
+
+
+        <div id="scrollhook" class="firstButtons">
+            <a onclick="return false;" class="BtBlackBlue" id="buttonIrgendwo">Irgendwo</a>
+
+            <a onclick="return false;" id="buttonWabern">Tramhaltestelle Wabern</a>
+        </div>
+
+        <div class="firstButtons">
+            <a id="ueberUnsBt" onclick="return false;">Über uns</a>
+
+        </div>
+
+
+
+        <div id="irgendwo" class="hide button-div">
+            <div class="lineNormal"></div>
+
+            <a id="tippBt" class="irgendwoAblaufBt">1. Tipp</a>
+
+            <div class="lineNormal"></div>
+
+            <a id="KopfhIrgendwoBt" class="irgendwoAblaufBt">2. Ton an</a>
+            <div class="lineNormal"></div>
+
+            <a id="SymblIrgendwoBt" class="irgendwoAblaufBt">3. Symbolleiste ausblenden</a>
+            <div class="lineNormal"></div>
+
+
+
+            <div class="lines">
+            </div>
+
+            <a class="irgendwoAblaufBt" href="https://569953-15.web1.fh-htwchur.ch/">4. Hier drücken und los geht’s!</a>
+        </div>
+
+        <div id="tippOne" class="popupIrgendwo popupAblauf" style="display: none;">
+            <h3>Tipp</h3>
+            <p class="hinweise">Du kannst dir Bärn scRollt von zuhause aus anhören, oder noch besser: direkt aus dem Tram! Gehe dazu an die Tramhaltestelle Wabern und setze dich in’s 9i-Tram. Dann kannst du dich ganz einfach mittels GPS lokalisieren lassen und fährst dann jeweils an den Schauplätzen der Geschichten vorbei. Solltest du jetzt gerade keine Zeit dazu haben, scrolle dich ganz einfach selbst durch und tauche ins Erlebnis ein.</p>
+            <button class="BtBlackBlue">Schliessen</button>
+        </div>
+
+        <div id="KopfhIrendwo" class="popupIrgendwo popupAblauf" style="display: none;">
+            <h3>Ton an</h3>
+            <p class="hinweise">In den folgenden 20 Minuten wirst du unterschiedliche Geschichten hören. Stelle also sicher, dass der Ton deines Handys eingeschaltet ist.</p>
+            <button class="BtBlackBlue">Schliessen</button>
+        </div>
+
+        
+        <div id="SymbolleisteIrgendwo" class="popupIrgendwo popupAblauf" style="display: none;">
+            <h3>Symbolleiste ausblenden</h3>
+            <p class="hinweise">(Betrifft Safari auf dem iPhone) Um alle Details sehen zu können, kannst du oben links neben der URL auf AA klicken und die Option “Symbolleiste ausblenden” aktivieren.</p>
+            <button class="BtBlackBlue">Schliessen</button>
+        </div>
+
+
+
+        <div id="wabern" class="hide button-div">
+            <div class="lineNormal"></div>
+
+
+            <a id="SysBt" class="wabernAblaufBt">1. Ortungsdienste aktivieren</a>
+            <div class="lineNormal"></div>
+            
+            <a id="FahrplanBt" class="wabernAblaufBt">2. Ins Tram einsteigen</a>
+            <div class="lineNormal"></div>
+
+
+            <a id="KopfhBt" class="wabernAblaufBt">3. Kopfhörer aufsetzen</a>
+            <div class="lineNormal"></div>
+            
+            <a id="SymblWabernBt" class="wabernAblaufBt">4. Symbolleiste ausblenden</a>
+            <div class="lineNormal"></div>
+
+
+            <a href="https://569953-15.web1.fh-htwchur.ch/" class="wabernAblaufBt">5. Hier drücken und los geht’s!</a>
+        </div>
+
+        <div id="SysEinst" class="popupWabern popupAblauf" style="display: none;">
+            <h3>Ortungsdienste aktivieren</h3>
+            <p class="hinweise">Gehe in die Systemeinstellungen deines Smartphones und aktiviere die Ortungsdienste für deinen Browser. Hier findest du eine Anleitung dazu:<br><br>
+                <a href="https://support.apple.com/de-de/HT207092" target="_blank">iOS</a><br><br>
+                <a href="https://support.google.com/chrome/answer/142065?co=GENIE.Platform%3DAndroid&hl=de" target="_blank">Android</a>
+            </p>
+            <button class="BtRedBlue">Schliessen</button>
+        </div>
+        <div id="KopfH" class="popupWabern popupAblauf" style="display: none;">
+            <h3>Kopfhörer aufsetzen</h3>
+            <p class="hinweise">In den folgenden 25 Minuten wirst du unterschiedliche Geschichten hören. Stelle also sicher, dass der Ton deines Handys eingeschaltet ist.</p>
+            <button class="BtRedBlue">Schliessen</button>
+        </div>
+
+
+        <div id="Fahrplan" class="popupWabern popupAblauf" style="display: none;">
+            <h3>Ins Tram einsteigen</h3>
+            <p class="hinweise">Nun musst du dich nur ins Tram setzen und es fährt dich ins Wankdorf.<br><br><a href="https://www.oevplus.ch/monitor/?viewType=singleView&layout=1&showClock=true&showPerron=true&stationGroup1Title=Wabern%2C%20Tram-Endstation&station_1_id=85%3A71395&station_1_name=Wabern%2C%20Tram-Endstation&station_1_quantity=5&station_1_group=1" target="_blank">Hier</a> findest du den Fahrplan zum nächsten 9i-Tram Richtung Bern Wankdorf. </p>
+            <button class="BtRedBlue">Schliessen</button>
+        </div>
+
+        <div id="SymbolleisteWabern" class="popupWabern popupAblauf" style="display: none;">
+            <h3>Symbolleiste ausblenden</h3>
+            <p class="hinweise">(Betrifft Safari auf dem iPhone) Um alle Details sehen zu können, kannst du oben links neben der URL auf AA klicken und die Option “Symbolleiste ausblenden” aktivieren.</p>
+            <button class="BtRedBlue">Schliessen</button>
+        </div>
+
+        <div id="ueberUnsBox" class="hide button-div">
+            <div class="lineNormal"></div>
+
+            <div id="ueberuns">
+                <object data="media/Alico.svg" type="image/svg+xml" id="alico" alt="Bild von Alina und Nico">
+                    <!-- Für Browser ohne SVG-Unterstützung -->
+                    <img src="media/Alico.svg" alt="Bild von Alina und Nico">
+                </object>
+                <p class="fliesstext">Wir sind Nico und Alina und haben uns 2017 im Studium “Multimedia Production” kennengelernt. Seither sind wir nicht nur enge Freunde, sondern auch eingespielte Projektpartner. Auch in der Freizeit beschäftigen wir uns gerne mit dem Organisieren und Umsetzen von Veranstaltungen aller Art. In dieser Arbeit haben wir gemeinsam ein neues Eventformat entwickelt und sind gespannt auf euer Feedback! Schreibt uns via <a href="mailto:info@bernscrollt.ch">info@bernscrollt.ch</a>
+</p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,514 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*_____________________________________________*/
+@import "font.css";
+
+body {
+    /*    height: 10000px;
+    */
+}
+
+#mainLogo {
+    margin: auto;
+    height: 400px;
+    width: 90%;
+}
+
+.linesPrimary {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.lineNormal {
+    margin: 40px auto;
+    height: 80px;
+    width: 1px;
+    border-left: 5px solid #4d4d4d;
+}
+
+
+
+/*_______Fonts________*/
+
+
+.firstButtons,
+.irgendwoAblaufBt,
+.wabernAblaufBt,
+#ueberuns,
+.popupAblauf button {
+    font-family: 'Maven Pro', sans-serif;
+    /*    font-weight: bold;*/
+    font-size: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Niveau Grotesk';
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: normal;
+}
+
+h1,
+h3 {
+    font-family: 'NiveauGroteskW01-MdSmallCaps';
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+h3 {}
+
+
+
+p {
+    text-align: center;
+    color: #fff;
+
+}
+
+.hinweise {
+    font-family: 'Maven Pro', sans-serif;
+    line-height: 1.3;
+    font-size: 3rem;
+    padding: 30px;
+}
+
+.fliesstext {
+    font-family: 'Niveau Grotesk', sans-serif;
+    font-size: 3.5 rem;
+    line-height: 1.3;
+}
+
+p a {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 3rem;
+    color: #deb8cc;
+    padding: 50px;
+    text-align: center;
+    padding: 0;
+    text-decoration: underline;
+}
+
+/*_______Flexbox________*/
+
+.maindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+
+
+/*_______Colors________*/
+
+body {
+    background-color: #333333;
+}
+
+/*_______Button allgemien________*/
+
+
+/*_______1. button styles________*/
+.BtBlackBlue {
+    box-sizing: border-box;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #4db8a1;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    width: 48vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 80px;
+    border-style: outset;
+}
+
+.BtRedBlue {
+    box-sizing: border-box;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #a63873;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    width: 48vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 80px;
+    border-style: outset;
+}
+
+
+
+
+#buttonWabern {
+    box-sizing: border-box;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #a63873;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    width: 48vw;
+    text-decoration: none;
+    text-align: center !important;
+    padding: 60px;
+    border-style: outset;
+
+
+}
+
+/*
+#buttonWabern:hover {
+    background-color: #a63873;
+    color: white;
+    transition-duration: 500ms;
+}
+
+#buttonWabern:active {
+    position: relative;
+    top: 1px;
+}
+*/
+
+#ueberUnsBt {
+    box-sizing: border-box;
+    margin: 0px auto;
+    margin-top: 50px;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    width: 38vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 30px;
+    border-style: outset;
+
+}
+
+/*
+#ueberUnsBt:hover {
+    background-color: #ffffff;
+    color: #333333;
+    transition-duration: 500ms;
+
+}
+
+#ueberUnsBt:active {
+    position: relative;
+    top: 1px;
+}*/
+
+
+/*_______2. button styles________*/
+.irgendwoAblaufBt {
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #4db8a1;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    width: 90vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 80px;
+    border-style: outset;
+}
+
+.irgendwoAblaufBt:hover {
+    background-color: #4db8a1;
+    transition-duration: 500ms;
+    border-style: inset !important;
+
+}
+
+.wabernAblaufBt {
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #a63873;
+    cursor: pointer;
+    color: #ffffff;
+    width: 90vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 80px;
+    border-style: outset;
+
+}
+
+.wabernAblaufBt:hover {
+    background-color: #a63873;
+    transition-duration: 500ms;
+    border-style: inset !important;
+
+}
+
+#irgendwo,
+#wabern {
+    margin-bottom: 30%;
+}
+
+/*_______über uns box________*/
+
+#ueberuns {
+    box-sizing: border-box;
+    margin: 0px auto;
+    background-color: #333333;
+    border-radius: 17px;
+    border: 7px solid #fff;
+    cursor: pointer;
+    color: #ffffff;
+    width: 90vw;
+    text-align: center !important;
+    text-decoration: none;
+    padding: 40px;
+
+}
+
+#alico {
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+/*_______Popup ________*/
+
+.popupIrgendwo {
+    position: fixed;
+    background-color: #333333;
+    border-radius: 49px;
+    border: 20px solid #4db8a1;
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90vw;
+    height: 85vh;
+    background-color: #333333;
+}
+
+.popupWabern {
+    position: fixed;
+    background-color: #333333;
+    border-radius: 49px;
+    border: 20px solid #a63873;
+    top: 20px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90vw;
+    height: 85vh;
+    background-color: #333333;
+}
+
+.popupAblauf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.popupAblauf button {
+    margin: 50px auto;
+    width: 80vw;
+}
+
+h3 {
+    margin-top: 60px;
+}
+
+
+/*_______animation-class________*/
+.hide {
+    /*    height: 0;*/
+    display: none;
+    opacity: 0;
+    transition-duration: 3000ms;
+}
+
+.show {
+    /*    height: auto;*/
+    display: flex;
+    opacity: 1;
+    transition-duration: 3000ms;
+
+
+}
+
+.redInvert {
+    background-color: #a63873 !important;
+    transition-duration: 300ms;
+    border-style: inset !important;
+
+}
+
+.blueInvert {
+    background-color: #4db8a1 !important;
+    transition-duration: 300ms;
+    border-style: inset !important;
+
+}
+
+.whiteInvert {
+    background-color: #fff !important;
+    color: #333333 !important;
+    transition-duration: 300ms;
+    border-style: inset !important;
+
+
+}
