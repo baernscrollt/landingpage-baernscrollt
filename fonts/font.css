@@ -1,0 +1,53 @@
+/*
+    font-family: 'NiveauGroteskW01-MdSmallCaps';
+    font-weight: 500;
+    font-style: normal;
+*/
+@font-face {
+    font-family: 'NiveauGroteskW01-MdSmallCaps';
+    src: url('NiveauGroteskW01-MdSmallCaps.eot');
+    src: url('NiveauGroteskW01-MdSmallCaps.eot?#iefix') format('embedded-opentype'),
+        url('NiveauGroteskW01-MdSmallCaps.woff2') format('woff2'),
+        url('NiveauGroteskW01-MdSmallCaps.woff') format('woff'),
+        url('NiveauGroteskW01-MdSmallCaps.ttf') format('truetype'),
+        url('NiveauGroteskW01-MdSmallCaps.svg#NiveauGroteskW01-MdSmallCaps') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*
+    font-family: 'Niveau Grotesk Medium SC';
+    font-weight: 500;
+    font-style: normal;
+*/
+
+
+@font-face {
+    font-family: 'Niveau Grotesk Medium SC';
+    src: url('NiveauGroteskMedium-SmallCaps.eot');
+    src: url('NiveauGroteskMedium-SmallCaps.eot?#iefix') format('embedded-opentype'),
+        url('NiveauGroteskMedium-SmallCaps.woff2') format('woff2'),
+        url('NiveauGroteskMedium-SmallCaps.woff') format('woff'),
+        url('NiveauGroteskMedium-SmallCaps.ttf') format('truetype'),
+        url('NiveauGroteskMedium-SmallCaps.svg#NiveauGroteskMedium-SmallCaps') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*
+font-family: 'Niveau Grotesk';
+font-weight: 300;
+font-style: normal;
+*/
+
+@font-face {
+    font-family: 'Niveau Grotesk';
+    src: url('NiveauGroteskLight.eot');
+    src: url('NiveauGroteskLight.eot?#iefix') format('embedded-opentype'),
+        url('NiveauGroteskLight.woff2') format('woff2'),
+        url('NiveauGroteskLight.woff') format('woff'),
+        url('NiveauGroteskLight.ttf') format('truetype'),
+        url('NiveauGroteskLight.svg#NiveauGroteskLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
