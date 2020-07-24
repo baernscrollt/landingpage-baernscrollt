@@ -132,11 +132,6 @@ table {
 /*_____________________________________________*/
 @import "font.css";
 
-body {
-    /*    height: 10000px;
-    */
-}
-
 #mainLogo {
     margin: auto;
     height: 400px;
@@ -509,6 +504,19 @@ h3 {
     color: #333333 !important;
     transition-duration: 300ms;
     border-style: inset !important;
+}
 
+#mobilemeldung {
+    display: none;
+}
 
+/*_______Only Mobile________*/
+
+@media only screen and (orientation: landscape) {
+  .maindiv {
+    display: none;
+  }
+    #mobilemeldung {
+        display: block;
+    }
 }
